@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCFC205C274427B000D18B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC205B274427B000D18B9E /* AppDelegate.swift */; };
+		FCFC205E274427B000D18B9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC205D274427B000D18B9E /* SceneDelegate.swift */; };
+		FCFC2060274427B000D18B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC205F274427B000D18B9E /* ViewController.swift */; };
+		FCFC2063274427B000D18B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFC2061274427B000D18B9E /* Main.storyboard */; };
+		FCFC2065274427B500D18B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCFC2064274427B500D18B9E /* Assets.xcassets */; };
+		FCFC2068274427B500D18B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFC2066274427B500D18B9E /* LaunchScreen.storyboard */; };
+		FCFC2073274427B500D18B9E /* WhatsThatWhistleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC2072274427B500D18B9E /* WhatsThatWhistleTests.swift */; };
+		FCFC207E274427B600D18B9E /* WhatsThatWhistleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC207D274427B600D18B9E /* WhatsThatWhistleUITests.swift */; };
+		FCFC208C274439B800D18B9E /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC208B274439B800D18B9E /* RecordWhistleViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCFC206F274427B500D18B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCFC2050274427B000D18B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCFC2057274427B000D18B9E;
+			remoteInfo = WhatsThatWhistle;
+		};
+		FCFC207A274427B500D18B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCFC2050274427B000D18B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCFC2057274427B000D18B9E;
+			remoteInfo = WhatsThatWhistle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCFC2058274427B000D18B9E /* WhatsThatWhistle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsThatWhistle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFC205B274427B000D18B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCFC205D274427B000D18B9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FCFC205F274427B000D18B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCFC2062274427B000D18B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCFC2064274427B500D18B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCFC2067274427B500D18B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCFC2069274427B500D18B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFC206E274427B500D18B9E /* WhatsThatWhistleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsThatWhistleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFC2072274427B500D18B9E /* WhatsThatWhistleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsThatWhistleTests.swift; sourceTree = "<group>"; };
+		FCFC2074274427B500D18B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFC2079274427B500D18B9E /* WhatsThatWhistleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsThatWhistleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFC207D274427B600D18B9E /* WhatsThatWhistleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsThatWhistleUITests.swift; sourceTree = "<group>"; };
+		FCFC207F274427B600D18B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFC208B274439B800D18B9E /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCFC2055274427B000D18B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFC206B274427B500D18B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFC2076274427B500D18B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCFC204F274427B000D18B9E = {
+			isa = PBXGroup;
+			children = (
+				FCFC205A274427B000D18B9E /* WhatsThatWhistle */,
+				FCFC2071274427B500D18B9E /* WhatsThatWhistleTests */,
+				FCFC207C274427B600D18B9E /* WhatsThatWhistleUITests */,
+				FCFC2059274427B000D18B9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCFC2059274427B000D18B9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCFC2058274427B000D18B9E /* WhatsThatWhistle.app */,
+				FCFC206E274427B500D18B9E /* WhatsThatWhistleTests.xctest */,
+				FCFC2079274427B500D18B9E /* WhatsThatWhistleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCFC205A274427B000D18B9E /* WhatsThatWhistle */ = {
+			isa = PBXGroup;
+			children = (
+				FCFC208D274439CA00D18B9E /* Views */,
+				FCFC205B274427B000D18B9E /* AppDelegate.swift */,
+				FCFC205D274427B000D18B9E /* SceneDelegate.swift */,
+				FCFC2061274427B000D18B9E /* Main.storyboard */,
+				FCFC2064274427B500D18B9E /* Assets.xcassets */,
+				FCFC2066274427B500D18B9E /* LaunchScreen.storyboard */,
+				FCFC2069274427B500D18B9E /* Info.plist */,
+			);
+			path = WhatsThatWhistle;
+			sourceTree = "<group>";
+		};
+		FCFC2071274427B500D18B9E /* WhatsThatWhistleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCFC2072274427B500D18B9E /* WhatsThatWhistleTests.swift */,
+				FCFC2074274427B500D18B9E /* Info.plist */,
+			);
+			path = WhatsThatWhistleTests;
+			sourceTree = "<group>";
+		};
+		FCFC207C274427B600D18B9E /* WhatsThatWhistleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCFC207D274427B600D18B9E /* WhatsThatWhistleUITests.swift */,
+				FCFC207F274427B600D18B9E /* Info.plist */,
+			);
+			path = WhatsThatWhistleUITests;
+			sourceTree = "<group>";
+		};
+		FCFC208D274439CA00D18B9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCFC205F274427B000D18B9E /* ViewController.swift */,
+				FCFC208B274439B800D18B9E /* RecordWhistleViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCFC2057274427B000D18B9E /* WhatsThatWhistle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCFC2082274427B600D18B9E /* Build configuration list for PBXNativeTarget "WhatsThatWhistle" */;
+			buildPhases = (
+				FCFC2054274427B000D18B9E /* Sources */,
+				FCFC2055274427B000D18B9E /* Frameworks */,
+				FCFC2056274427B000D18B9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsThatWhistle;
+			productName = WhatsThatWhistle;
+			productReference = FCFC2058274427B000D18B9E /* WhatsThatWhistle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCFC206D274427B500D18B9E /* WhatsThatWhistleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCFC2085274427B600D18B9E /* Build configuration list for PBXNativeTarget "WhatsThatWhistleTests" */;
+			buildPhases = (
+				FCFC206A274427B500D18B9E /* Sources */,
+				FCFC206B274427B500D18B9E /* Frameworks */,
+				FCFC206C274427B500D18B9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCFC2070274427B500D18B9E /* PBXTargetDependency */,
+			);
+			name = WhatsThatWhistleTests;
+			productName = WhatsThatWhistleTests;
+			productReference = FCFC206E274427B500D18B9E /* WhatsThatWhistleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCFC2078274427B500D18B9E /* WhatsThatWhistleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCFC2088274427B600D18B9E /* Build configuration list for PBXNativeTarget "WhatsThatWhistleUITests" */;
+			buildPhases = (
+				FCFC2075274427B500D18B9E /* Sources */,
+				FCFC2076274427B500D18B9E /* Frameworks */,
+				FCFC2077274427B500D18B9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCFC207B274427B500D18B9E /* PBXTargetDependency */,
+			);
+			name = WhatsThatWhistleUITests;
+			productName = WhatsThatWhistleUITests;
+			productReference = FCFC2079274427B500D18B9E /* WhatsThatWhistleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCFC2050274427B000D18B9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FCFC2057274427B000D18B9E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					FCFC206D274427B500D18B9E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FCFC2057274427B000D18B9E;
+					};
+					FCFC2078274427B500D18B9E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FCFC2057274427B000D18B9E;
+					};
+				};
+			};
+			buildConfigurationList = FCFC2053274427B000D18B9E /* Build configuration list for PBXProject "WhatsThatWhistle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCFC204F274427B000D18B9E;
+			productRefGroup = FCFC2059274427B000D18B9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCFC2057274427B000D18B9E /* WhatsThatWhistle */,
+				FCFC206D274427B500D18B9E /* WhatsThatWhistleTests */,
+				FCFC2078274427B500D18B9E /* WhatsThatWhistleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCFC2056274427B000D18B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFC2068274427B500D18B9E /* LaunchScreen.storyboard in Resources */,
+				FCFC2065274427B500D18B9E /* Assets.xcassets in Resources */,
+				FCFC2063274427B000D18B9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFC206C274427B500D18B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFC2077274427B500D18B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCFC2054274427B000D18B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFC2060274427B000D18B9E /* ViewController.swift in Sources */,
+				FCFC205C274427B000D18B9E /* AppDelegate.swift in Sources */,
+				FCFC208C274439B800D18B9E /* RecordWhistleViewController.swift in Sources */,
+				FCFC205E274427B000D18B9E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFC206A274427B500D18B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFC2073274427B500D18B9E /* WhatsThatWhistleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCFC2075274427B500D18B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCFC207E274427B600D18B9E /* WhatsThatWhistleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCFC2070274427B500D18B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCFC2057274427B000D18B9E /* WhatsThatWhistle */;
+			targetProxy = FCFC206F274427B500D18B9E /* PBXContainerItemProxy */;
+		};
+		FCFC207B274427B500D18B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCFC2057274427B000D18B9E /* WhatsThatWhistle */;
+			targetProxy = FCFC207A274427B500D18B9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCFC2061274427B000D18B9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCFC2062274427B000D18B9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCFC2066274427B500D18B9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCFC2067274427B500D18B9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCFC2080274427B600D18B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCFC2081274427B600D18B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCFC2083274427B600D18B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35FN5AB6A3;
+				INFOPLIST_FILE = WhatsThatWhistle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykcorso.WhatsThatWhistle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCFC2084274427B600D18B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35FN5AB6A3;
+				INFOPLIST_FILE = WhatsThatWhistle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykcorso.WhatsThatWhistle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCFC2086274427B600D18B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35FN5AB6A3;
+				INFOPLIST_FILE = WhatsThatWhistleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykcorso.WhatsThatWhistleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatsThatWhistle.app/WhatsThatWhistle";
+			};
+			name = Debug;
+		};
+		FCFC2087274427B600D18B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35FN5AB6A3;
+				INFOPLIST_FILE = WhatsThatWhistleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykcorso.WhatsThatWhistleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatsThatWhistle.app/WhatsThatWhistle";
+			};
+			name = Release;
+		};
+		FCFC2089274427B600D18B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35FN5AB6A3;
+				INFOPLIST_FILE = WhatsThatWhistleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykcorso.WhatsThatWhistleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhatsThatWhistle;
+			};
+			name = Debug;
+		};
+		FCFC208A274427B600D18B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35FN5AB6A3;
+				INFOPLIST_FILE = WhatsThatWhistleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykcorso.WhatsThatWhistleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WhatsThatWhistle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCFC2053274427B000D18B9E /* Build configuration list for PBXProject "WhatsThatWhistle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFC2080274427B600D18B9E /* Debug */,
+				FCFC2081274427B600D18B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCFC2082274427B600D18B9E /* Build configuration list for PBXNativeTarget "WhatsThatWhistle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFC2083274427B600D18B9E /* Debug */,
+				FCFC2084274427B600D18B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCFC2085274427B600D18B9E /* Build configuration list for PBXNativeTarget "WhatsThatWhistleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFC2086274427B600D18B9E /* Debug */,
+				FCFC2087274427B600D18B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCFC2088274427B600D18B9E /* Build configuration list for PBXNativeTarget "WhatsThatWhistleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCFC2089274427B600D18B9E /* Debug */,
+				FCFC208A274427B600D18B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCFC2050274427B000D18B9E /* Project object */;
+}
