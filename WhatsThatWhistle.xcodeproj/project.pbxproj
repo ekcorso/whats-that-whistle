@@ -16,6 +16,9 @@
 		FCFC2073274427B500D18B9E /* WhatsThatWhistleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC2072274427B500D18B9E /* WhatsThatWhistleTests.swift */; };
 		FCFC207E274427B600D18B9E /* WhatsThatWhistleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC207D274427B600D18B9E /* WhatsThatWhistleUITests.swift */; };
 		FCFC208C274439B800D18B9E /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC208B274439B800D18B9E /* RecordWhistleViewController.swift */; };
+		FCFC208F2744A65B00D18B9E /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC208E2744A65B00D18B9E /* SelectGenreViewController.swift */; };
+		FCFC20912744A92A00D18B9E /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC20902744A92A00D18B9E /* AddCommentsViewController.swift */; };
+		FCFC20932744AD9300D18B9E /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC20922744AD9300D18B9E /* SubmitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		FCFC207D274427B600D18B9E /* WhatsThatWhistleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsThatWhistleUITests.swift; sourceTree = "<group>"; };
 		FCFC207F274427B600D18B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCFC208B274439B800D18B9E /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
+		FCFC208E2744A65B00D18B9E /* SelectGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
+		FCFC20902744A92A00D18B9E /* AddCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentsViewController.swift; sourceTree = "<group>"; };
+		FCFC20922744AD9300D18B9E /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,9 @@
 		FCFC208D274439CA00D18B9E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FCFC20902744A92A00D18B9E /* AddCommentsViewController.swift */,
+				FCFC20922744AD9300D18B9E /* SubmitViewController.swift */,
+				FCFC208E2744A65B00D18B9E /* SelectGenreViewController.swift */,
 				FCFC205F274427B000D18B9E /* ViewController.swift */,
 				FCFC208B274439B800D18B9E /* RecordWhistleViewController.swift */,
 			);
@@ -269,9 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFC20932744AD9300D18B9E /* SubmitViewController.swift in Sources */,
 				FCFC2060274427B000D18B9E /* ViewController.swift in Sources */,
 				FCFC205C274427B000D18B9E /* AppDelegate.swift in Sources */,
+				FCFC208F2744A65B00D18B9E /* SelectGenreViewController.swift in Sources */,
 				FCFC208C274439B800D18B9E /* RecordWhistleViewController.swift in Sources */,
+				FCFC20912744A92A00D18B9E /* AddCommentsViewController.swift in Sources */,
 				FCFC205E274427B000D18B9E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
