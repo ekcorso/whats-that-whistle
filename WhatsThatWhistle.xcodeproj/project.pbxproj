@@ -20,6 +20,7 @@
 		FCFC20912744A92A00D18B9E /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC20902744A92A00D18B9E /* AddCommentsViewController.swift */; };
 		FCFC20932744AD9300D18B9E /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC20922744AD9300D18B9E /* SubmitViewController.swift */; };
 		FCFC209727458DEF00D18B9E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFC209627458DEF00D18B9E /* CloudKit.framework */; };
+		FCFC20992745FFDF00D18B9E /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC20982745FFDE00D18B9E /* Whistle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		FCFC20922744AD9300D18B9E /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		FCFC209427458CF400D18B9E /* WhatsThatWhistle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatsThatWhistle.entitlements; sourceTree = "<group>"; };
 		FCFC209627458DEF00D18B9E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		FCFC20982745FFDE00D18B9E /* Whistle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				FCFC205B274427B000D18B9E /* AppDelegate.swift */,
 				FCFC205D274427B000D18B9E /* SceneDelegate.swift */,
 				FCFC2061274427B000D18B9E /* Main.storyboard */,
+				FCFC20982745FFDE00D18B9E /* Whistle.swift */,
 				FCFC2064274427B500D18B9E /* Assets.xcassets */,
 				FCFC2066274427B500D18B9E /* LaunchScreen.storyboard */,
 				FCFC2069274427B500D18B9E /* Info.plist */,
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFC20992745FFDF00D18B9E /* Whistle.swift in Sources */,
 				FCFC20932744AD9300D18B9E /* SubmitViewController.swift in Sources */,
 				FCFC2060274427B000D18B9E /* ViewController.swift in Sources */,
 				FCFC205C274427B000D18B9E /* AppDelegate.swift in Sources */,
