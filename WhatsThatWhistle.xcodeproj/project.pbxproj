@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCE65FD2279E652D00A9A675 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE65FD1279E652D00A9A675 /* ResultsViewController.swift */; };
 		FCFC205C274427B000D18B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC205B274427B000D18B9E /* AppDelegate.swift */; };
 		FCFC205E274427B000D18B9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC205D274427B000D18B9E /* SceneDelegate.swift */; };
 		FCFC2060274427B000D18B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC205F274427B000D18B9E /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FCE65FD1279E652D00A9A675 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		FCFC2058274427B000D18B9E /* WhatsThatWhistle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsThatWhistle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFC205B274427B000D18B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCFC205D274427B000D18B9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				FCFC20922744AD9300D18B9E /* SubmitViewController.swift */,
 				FCFC208E2744A65B00D18B9E /* SelectGenreViewController.swift */,
 				FCFC205F274427B000D18B9E /* ViewController.swift */,
+				FCE65FD1279E652D00A9A675 /* ResultsViewController.swift */,
 				FCFC208B274439B800D18B9E /* RecordWhistleViewController.swift */,
 			);
 			path = Views;
@@ -300,6 +303,7 @@
 				FCFC2060274427B000D18B9E /* ViewController.swift in Sources */,
 				FCFC205C274427B000D18B9E /* AppDelegate.swift in Sources */,
 				FCFC208F2744A65B00D18B9E /* SelectGenreViewController.swift in Sources */,
+				FCE65FD2279E652D00A9A675 /* ResultsViewController.swift in Sources */,
 				FCFC208C274439B800D18B9E /* RecordWhistleViewController.swift in Sources */,
 				FCFC20912744A92A00D18B9E /* AddCommentsViewController.swift in Sources */,
 				FCFC205E274427B000D18B9E /* SceneDelegate.swift in Sources */,
