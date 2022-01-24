@@ -75,6 +75,34 @@ class ResultsViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.section == 1 && indexPath.row == suggestions.count else { return }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let ac = UIAlertController(title: "Suggest a song...", message: nil, preferredStyle: .alert)
+        ac.addTextField()
+        
+        ac.addAction(UIAlertAction(title: "Submit", style: .default) { [unowned self, ac] action in
+            if let textField = ac.textFields?[0] {
+                if textField.text!.count > 0 {
+                    self.add(suggestion: textField.text!)
+                }
+            }
+        })
+        
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(ac, animated: true)
+    }
+    
+    func add(suggestion: String) {
+        let whistleRecord = CKRecord(recordType: "Suggestions")
+        let reference = CKRecord.Reference(recordID: whistle.recordID, action: .deleteSelf)
+        
+        whistleRecord["text"] = suggestion as CKRecordValue
+        whistleRecord["owningWhistle"] = reference as CKRecordValue
+    }
 
     /*
     // Override to support conditional editing of the table view.
