@@ -8,6 +8,7 @@
 import UIKit
 import AVFoundation
 import CloudKit
+import XCTest
 
 class ResultsViewController: UITableViewController {
     var whistle: Whistle!
@@ -18,11 +19,26 @@ class ResultsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        title = "Genre: \(whistle.genre!)"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Download", style: .plain, target: self, action: #selector(downloadTapped))
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        let reference = CKRecord.Reference(recordID: whistle.recordID, action: .deleteSelf)
+        let pred = NSPredicate(format: "owningWhistle == %@", reference)
+        let sort = NSSortDescriptor(key: "creationDate", ascending: true)
+        let query = CKQuery(recordType: "Suggestions", predicate: pred)
+        query.sortDescriptors = [sort]
+        
+        CKContainer.default().publicCloudDatabase.perform(query, inZoneWith: nil) { [unowned self] results, error in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                if let results = results {
+                    self.parseResults(records: results)
+                }
+            }
+        }
     }
 
     // MARK: - Table view data source
@@ -102,6 +118,37 @@ class ResultsViewController: UITableViewController {
         
         whistleRecord["text"] = suggestion as CKRecordValue
         whistleRecord["owningWhistle"] = reference as CKRecordValue
+        
+        CKContainer.default().publicCloudDatabase.save(whistleRecord) { [unowned self] record, error in
+            DispatchQueue.main.async {
+                if error == nil {
+                    self.suggestions.append(suggestion)
+                    self.tableView.reloadData()
+                } else {
+                    let ac = UIAlertController(title: "Error", message: "There was a problem submitting your suggestion \(error!.localizedDescription)", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    self.present(ac, animated: true)
+                }
+            }
+            
+        }
+    }
+    
+    func parseResults(records: [CKRecord]) {
+        var newSuggestions = [String]()
+        
+        for record in records {
+            newSuggestions.append(record["text"] as! String)
+        }
+        
+        DispatchQueue.main.async { [unowned self] in
+            self.suggestions = newSuggestions
+            self.tableView.reloadData()
+        }
+    }
+    
+    func downloadTapped() {
+        
     }
 
     /*
