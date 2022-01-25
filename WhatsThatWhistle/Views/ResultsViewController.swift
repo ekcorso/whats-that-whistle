@@ -8,13 +8,12 @@
 import UIKit
 import AVFoundation
 import CloudKit
-import XCTest
 
 class ResultsViewController: UITableViewController {
     var whistle: Whistle!
     var suggestions = [String]()
     
-    var whislePlayer: AVAudioPlayer!
+    var whistlePlayer: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +63,7 @@ class ResultsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.selectionStyle = .none
         cell.textLabel?.numberOfLines = 0
         
@@ -175,7 +174,7 @@ class ResultsViewController: UITableViewController {
     @objc func listenTapped() {
         do {
             whistlePlayer = try AVAudioPlayer(contentsOf: whistle.audio)
-            whislePlayer.play()
+            whistlePlayer.play()
         } catch {
             let ac = UIAlertController(title: "Playback failed", message: "There was a problem playing your whistle; please try re-recording.", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Ok", style: .default))
