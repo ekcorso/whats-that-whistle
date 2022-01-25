@@ -46,6 +46,12 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ResultsViewController()
+        vc.whistle = whistles[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func loadWhistles() {
         let pred = NSPredicate(value: true)
         let sort = NSSortDescriptor(key: "creationDate", ascending: false)
