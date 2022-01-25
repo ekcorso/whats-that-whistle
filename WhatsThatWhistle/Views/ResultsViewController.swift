@@ -147,8 +147,40 @@ class ResultsViewController: UITableViewController {
         }
     }
     
-    func downloadTapped() {
+    @objc func downloadTapped() {
+        let spinner = UIActivityIndicatorView(style: .large)
+        spinner.tintColor = .black
+        spinner.startAnimating()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: spinner)
         
+        CKContainer.default().publicCloudDatabase.fetch(withRecordID: whistle.recordID) { [unowned self] record, error in
+            if let error = error {
+                DispatchQueue.main.async {
+                    self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Download", style: .plain, target: self, action: #selector(self.downloadTapped))
+                }
+            } else {
+                if let record = record {
+                    if let asset = record["audio"] as? CKAsset {
+                        self.whistle.audio = asset.fileURL
+                        
+                        DispatchQueue.main.async {
+                            self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Listen", style: .plain, target: self, action: #selector(self.listenTapped))
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @objc func listenTapped() {
+        do {
+            whistlePlayer = try AVAudioPlayer(contentsOf: whistle.audio)
+            whislePlayer.play()
+        } catch {
+            let ac = UIAlertController(title: "Playback failed", message: "There was a problem playing your whistle; please try re-recording.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(ac, animated: true)
+        }
     }
 
     /*
