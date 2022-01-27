@@ -17,6 +17,7 @@ class ViewController: UITableViewController {
         
         title = "What's that Whistle"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWhistle))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Genres", style: .plain, target: self, action: #selector(selectGenre))
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
@@ -103,6 +104,11 @@ class ViewController: UITableViewController {
     
     @objc func addWhistle() {
         let vc = RecordWhistleViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func selectGenre() {
+        let vc = MyGenresViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
 }
